@@ -4,19 +4,11 @@
       <h1>{{ title }}</h1>
     </div>
     <div class="card-body">
-      <input class="form-control" type="text" name="newTask" id="newTak" />
-      <button class="btn btn-primary my-3" type="submit">Add Task</button>
+      <app-task-form [taskList]="taskList"></app-task-form>
     </div>
     <div class="card-body">
       <h2>My Current Task ({{ taskList.length }})</h2>
-      <ul>
-        <li
-          class="d-flex my-3 py-2 px-3"
-          *ngFor="let task of taskList; let i = index"
-        >
-          {{ task }} <button class="btn btn-danger">Delete</button>
-        </li>
-      </ul>
+      <app-task-list [tasks]="taskList"></app-task-list>
     </div>
   </div>
 </div>

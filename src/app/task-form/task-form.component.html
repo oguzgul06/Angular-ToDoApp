@@ -1,1 +1,10 @@
-<p>task-form works!</p>
+<input
+  class="form-control"
+  type="text"
+  name="newTask"
+  id="newTak"
+  [ngModel]="newTask"
+/>
+<button class="btn btn-primary my-3" type="submit" (click)="addTodo()">
+  Add Task
+</button>
