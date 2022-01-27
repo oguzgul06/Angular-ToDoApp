@@ -1,0 +1,12 @@
+li {
+  justify-content: space-between;
+  border: 1px solid gray;
+  border-radius: 20px;
+  align-items: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+li:hover {
+  background-color: rebeccapurple;
+}
