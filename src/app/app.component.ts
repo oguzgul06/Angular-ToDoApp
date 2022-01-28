@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'My Task List';
+  title = 'My ToDo List';
   taskList: string[] = ['task 1', 'task 2', 'task 3', 'task 4'];
 }

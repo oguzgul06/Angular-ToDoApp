@@ -14,5 +14,6 @@ export class TaskFormComponent implements OnInit {
 
   addTodo() {
     this.taskList.unshift(this.newTask);
+    this.newTask = '';
   }
 }

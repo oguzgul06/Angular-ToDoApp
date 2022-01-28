@@ -11,4 +11,8 @@ export class TaskListComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  removeTask(index: number) {
+    this.tasks.splice(index, 1);
+  }
 }
