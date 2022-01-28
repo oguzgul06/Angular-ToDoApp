@@ -1,11 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'My ToDo List';
-  taskList: string[] = ['task 1', 'task 2', 'task 3', 'task 4'];
+  taskList: string[] = [];
+
+  ngOnInit(): void {
+    if (localStorage.getItem('my_tasks')) {
+      this.taskList = JSON.parse(localStorage.getItem('my_tasks') || '{}');
+    }
+  }
 }

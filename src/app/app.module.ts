@@ -5,9 +5,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { TaskFormComponent } from './task-form/task-form.component';
 import { TaskListComponent } from './task-list/task-list.component';
+import { FilterPipePipe } from './filter-pipe.pipe';
 
 @NgModule({
-  declarations: [AppComponent, TaskFormComponent, TaskListComponent],
+  declarations: [AppComponent, TaskFormComponent, TaskListComponent, FilterPipePipe],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
